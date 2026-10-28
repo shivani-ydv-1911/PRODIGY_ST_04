@@ -1,0 +1,37 @@
+# BrowserStack Configuration for PRODIGY_ST_04
+userName: ${BROWSERSTACK_USERNAME:YOUR_BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY:YOUR_BROWSERSTACK_ACCESS_KEY}
+
+projectName: Prodigy InfoTech - Software Testing
+buildName: PRODIGY_ST_04 Cross-Browser Testing
+sessionName: Automated Login Cross-Browser Suite
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+
+  - os: Windows
+    osVersion: 11
+    browserName: Firefox
+    browserVersion: latest
+
+  - os: OS X
+    osVersion: Sonoma
+    browserName: Safari
+    browserVersion: latest
+
+  - os: Windows
+    osVersion: 11
+    browserName: Edge
+    browserVersion: latest
+
+  - deviceName: iPhone 15
+    osVersion: 17
+    browserName: Safari
+
+browserstackLocal: false
+debug: true
+networkLogs: true
+consoleLogs: info
